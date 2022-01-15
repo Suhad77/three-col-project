@@ -1,0 +1,90 @@
+
+/* common css */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.contanir{
+    /* width: 1140px; */
+    /* margin: 0 auto; */
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+h1{
+    
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* luxuty css */
+
+.cars{
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.sedans{
+    padding: 30px;
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%)
+    ;padding: 30px;
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    padding: 30px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.btn{
+    background: #fff;
+    padding: 5px 12px;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    transition: .4s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #fff;
+
+}
+
+@media screen and (max-width:375px ){
+    .cars{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sedans{
+        border-bottom-left-radius: 0;
+    }
+    .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 6px;
+    }
+    
+}
